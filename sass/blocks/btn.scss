@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid  #000000;
+  padding: 18px 40px;
+  text-decoration: none;
+  @include set-font(18px, 16px);
+  letter-spacing: 3px;
+  
+  &--reasons {
+    width: 280px;
+  }
+
+  &--posters {
+    margin-top: 100px;
+  }
+
+  &--submit {
+    width: 130px;
+    margin: 0;
+    padding: 12px 25px;
+    @include set-font(16px, 30px);
+    letter-spacing: 2px;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+  }
+}  
+

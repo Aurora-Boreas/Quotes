@@ -1,0 +1,39 @@
+.daily-quote {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-height: 660px;
+  padding-top: 190px;
+  padding-bottom: 146px;
+  background: #4f505d url("../img/bg-daily-quote@1x.jpg") no-repeat;
+  color: #ffffff;
+}
+
+.daily-quote__wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.daily-quote__title {
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(60px, 65px);
+  font-weight: 400;
+}
+
+.daily-quote__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  & p,
+  & a {
+    font-family: "Raleway", Arial, sans-serif;
+    @include set-font(20px, 25px);
+    font-weight: 400;
+  }
+}
+
+.daily-quote__link {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}

@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 83px;
+  padding-bottom: 55px;
+}
+
+.features__title {
+  margin: 0;
+  @include set-font(60px, 80px);
+}
+
+.features__description {
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(20px, 25px);
+  font-weight: 600;
+}
+
+.features__separator {
+  margin-top: 41px;
+  margin-bottom: 60px;
+}
+
+.features__text {
+  width: 960px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(20px, 25px);
+  font-weight: 400;
+}
+

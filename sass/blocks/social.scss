@@ -1,0 +1,45 @@
+.social {
+  font-size: 0;
+  display: flex;
+}
+
+.social__item {
+  display: block;
+  width: 27px;
+  height: 25px;
+  margin-left: 17px;
+  opacity: 0.15;
+  background: transparent url("../img/sprite-socials.png") no-repeat;
+  
+  &--fb {
+    background-position: 10px 0; 
+  }
+
+  &--tw {
+    background-position: -37px 0 ; 
+  }
+
+  &--in {
+    background-position: -84px 0; 
+  }
+
+  &--youtube {
+    background-position: -132px 0; 
+  }
+
+  &--gp {
+    background-position: -184px 0; 
+  }
+
+  &--pi {
+    background-position: -234px 0; 
+  }
+
+  &--insta {
+    background-position: -277px 0; 
+  }
+
+  &--em {
+    background-position: -323px 0; 
+  }
+}

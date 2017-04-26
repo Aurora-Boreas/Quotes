@@ -1,0 +1,16 @@
+.footer-bottom {
+  background-color: #f2f4f5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include set-font(16px, 34px);
+  letter-spacing: 2px;
+}
+
+.footer-bottom__wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

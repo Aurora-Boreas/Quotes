@@ -1,0 +1,10 @@
+@mixin set-font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin wrapper-container() {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0 100px;
+}

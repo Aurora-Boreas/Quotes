@@ -1,0 +1,135 @@
+.buy {
+  padding-top: 104px;
+  padding-bottom: 120px;
+  background-color: #f2f4f5;
+}
+
+.buy__wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.buy__title {
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(60px, 48px);
+  font-weight: bold; 
+  margin-bottom: 132px;
+}
+
+.buy__separator {
+  position: absolute;
+  top: 86px;
+  left: 0;
+}
+
+.buy__items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buy__column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  
+  &--hit {
+    & a {
+      color: #000000;
+    }
+
+    // &:hover {
+    //   & a {
+    //   color: #ffffff;
+    //   }
+    //   & .buy__btn--share {
+    //   background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
+    //   }
+    // }
+    // &:active {
+    //   & a {
+    //   color: #ffffff;
+    //   }
+    //   & .buy__btn--share {
+    //   background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
+    //   }
+    // }
+  }
+
+  &--other {
+    padding-left: 100px;
+    & a {
+      color: transparent;
+    }
+  }
+
+
+  
+}
+
+
+.buy__item {
+  position: relative;
+  
+  & img {
+    display: flex;
+  }
+
+  &--active {
+    box-shadow: 0px 2px 39px 80px rgba(160, 160, 160, 0.13);
+    border: 1px solid #000000;
+  }
+}
+
+.buy__item--big,
+.buy__item--middle,
+.buy__item--small {
+
+  &:hover,
+  &:active {
+    & a {
+      color: #ffffff;
+    }
+
+    & .buy__btn--share {
+      background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
+    }
+  }
+
+  // &:active {
+  //   & a {
+  //     color: #ffffff;
+  //   }
+  //   & .buy__btn--share {
+  //     background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
+  //   }
+  // }
+}
+
+.buy__btn {
+  position: absolute;
+  bottom: 30px;
+  @include set-font(20px, 30px);
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  &--share {
+    width: 110px;
+    left: none;
+    right: 32px;
+  }
+
+  &--buy {
+    left: 37px;
+  }
+}
+

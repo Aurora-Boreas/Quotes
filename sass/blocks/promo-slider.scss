@@ -1,0 +1,82 @@
+.promo-slider {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  
+  & input[type=radio] {
+    position:absolute;
+    opacity:0;
+  }
+}
+
+.promo-slider__controls{
+  position:absolute;
+  bottom:112px;
+  left:50%;
+  width:200px;
+  height:10px;
+  margin-left:-100px;
+  text-align:center;
+  z-index:10;
+    
+  & label {
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin:0 13px;
+    background:#000000;
+    // border:9px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+  }  
+}
+
+#promo-slider_btn-1:checked ~ .promo-slider__controls label[for="promo-slider_btn-1"],
+#promo-slider_btn-2:checked ~ .promo-slider__controls label[for="promo-slider_btn-2"],
+#promo-slider_btn-3:checked ~ .promo-slider__controls label[for="promo-slider_btn-3"] { 
+    background: #ffffff;
+}
+
+.promo-slider__item {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top:0;
+  left:0;
+  width:1600px;
+  height:100%;
+  padding-top: 253px;
+  padding-right: 82px;
+  overflow:hidden;
+  color: #ffffff;
+  background: #acb2b6 url("../img/slides/bg-promo@1x.jpg");
+}
+
+.promo-slider__item{
+    display:none;
+}
+#promo-slider_btn-1:checked ~ .promo-slider__items .promo-slider__item:nth-child(1) { 
+    display: flex;
+}
+#promo-slider_btn-2:checked ~ .promo-slider__items .promo-slider__item:nth-child(2) { 
+    display: flex;
+}
+#promo-slider_btn-3:checked ~ .promo-slider__items .promo-slider__item:nth-child(3) { 
+    display: flex;
+}
+
+.promo-slider__title {
+  margin: 0;
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(220px, 250px);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.promo-slider__text {
+  font-family: "Raleway", Arial, sans-serif;
+  @include set-font(64px, 50px);
+  font-weight: bold; 
+}
