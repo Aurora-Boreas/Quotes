@@ -2,14 +2,19 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  min-height: 660px;
-  padding-top: 190px;
-  padding-bottom: 146px;
-  background: #4f505d url("../img/bg-daily-quote@1x.jpg") no-repeat;
   color: #ffffff;
 }
 
 .daily-quote__wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 146px;
+  min-height: 660px;
+  background: #4f505d url("../img/bg-daily-quote@1x.jpg") no-repeat;
+}  
+  
+.daily-quote__description {
   width: 800px;
   margin: 0 auto;
 }
