@@ -46,34 +46,15 @@
     & a {
       color: #000000;
     }
-
-    // &:hover {
-    //   & a {
-    //   color: #ffffff;
-    //   }
-    //   & .buy__btn--share {
-    //   background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
-    //   }
-    // }
-    // &:active {
-    //   & a {
-    //   color: #ffffff;
-    //   }
-    //   & .buy__btn--share {
-    //   background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
-    //   }
-    // }
   }
 
   &--other {
-    padding-left: 100px;
+    width: 740px;
+    // padding-left: 100px;
     & a {
       color: transparent;
     }
   }
-
-
-  
 }
 
 
@@ -104,15 +85,6 @@
       background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
     }
   }
-
-  // &:active {
-  //   & a {
-  //     color: #ffffff;
-  //   }
-  //   & .buy__btn--share {
-  //     background: transparent url("../img/icon-share-white.png") 78px 2px no-repeat;  
-  //   }
-  // }
 }
 
 .buy__btn {

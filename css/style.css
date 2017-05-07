@@ -81,6 +81,8 @@ p {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 55px;
   height: 45px;
   padding: 0;
@@ -503,7 +505,7 @@ p {
   .buy__column--hit a {
     color: #000000; }
   .buy__column--other {
-    padding-left: 100px; }
+    width: 740px; }
     .buy__column--other a {
       color: transparent; }
 
