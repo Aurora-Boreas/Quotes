@@ -1,10 +1,12 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
+  require("load-grunt-tasks")(grunt);
+ 
+  // grunt.loadNpmTasks("grunt-browser-sync");
+  // grunt.loadNpmTasks("grunt-contrib-watch");
+  // grunt.loadNpmTasks("grunt-postcss");
+  // grunt.loadNpmTasks("grunt-sass");
 
   grunt.initConfig({
     sass: {
@@ -25,6 +27,17 @@ module.exports = function(grunt) {
           ]
         },
         src: "css/*.css"
+      }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "css/style.min.css": ["css/style.css"]
+        }
       }
     },
 
@@ -56,4 +69,9 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask ("build", [
+    "sass",
+    "postcss",
+    "csso"
+  ]);
 };
